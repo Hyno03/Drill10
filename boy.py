@@ -2,8 +2,8 @@
 
 from pico2d import get_time, load_image, SDL_KEYDOWN, SDL_KEYUP, SDLK_SPACE, SDLK_LEFT, SDLK_RIGHT
 
-from Pico2d.Lec12 import game_world
-from Pico2d.Lec12.ball import Ball
+import game_world
+from ball import Ball
 
 
 # state event check
@@ -152,7 +152,7 @@ class StateMachine:
 
 class Boy:
     def __init__(self):
-        self.x, self.y = 400, 90
+        self.x, self.y = 400, 50
         self.frame = 0
         self.action = 3
         self.dir = 0
